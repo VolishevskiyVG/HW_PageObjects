@@ -17,7 +17,7 @@ public class PageObjectsAutomationPracticeForm extends TestBase {
                 subject = "English",
                 file = "img/image_2022-11-11_17-13-46.png",
                 hobbies = "Reading",
-                Address = "Krasnodar street gorkogo 53",
+                address = "Krasnodar street gorkogo 53",
                 state = "Uttar Pradesh",
                 city = "Merrut";
 
@@ -31,10 +31,10 @@ public class PageObjectsAutomationPracticeForm extends TestBase {
                 .setSubjects(subject)
                 .setLoadPicture(file)
                 .setHobbiesWrapper(hobbies)
-                .setAddress(Address)
+                .setAddress(address)
                 .setState(state)
                 .setCity(city)
-                .setSubmit();
+                .pressSubmit();
 
         registrationPage.verifyResultsModalAppears()
                 .verifyResult("Student Name", "Vasili Volishevskii")

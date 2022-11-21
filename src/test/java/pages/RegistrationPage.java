@@ -101,7 +101,7 @@ public class RegistrationPage {
         return this;
     }
 
-    public RegistrationPage setSubmit() {
+    public RegistrationPage pressSubmit() {
         $("#submit").click();
 
         return this;
